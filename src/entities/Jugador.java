@@ -11,16 +11,15 @@ import interfaces.Actions;
  *
  * @author A7-PC00
  */
-public class Jugador implements Actions{
-    String nombre;
+public class Jugador extends Cuerpo implements Actions{
     static int contJugadores;
-
-    public String getNombre() {
-        return nombre;
-    }
 
     public static int getContJugadores() {
         return contJugadores;
+    }
+
+    public Jugador(String nombre) {
+        super(nombre);
     }
 
     @Override
